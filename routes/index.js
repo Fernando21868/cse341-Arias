@@ -1,6 +1,8 @@
 const routes = require('express').Router();
-const { home } = require('../controllers');
+const { fernandoRoute, claudiaRoute, orlandoRoute } = require('../controllers');
 
-routes.get('/', home);
+routes.get('/', fernandoRoute);
+routes.get('/claudia', claudiaRoute);
+routes.get('/orlando', orlandoRoute);
 
 module.exports = routes;
