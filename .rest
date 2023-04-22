@@ -11,3 +11,9 @@ GET http://localhost:4000/orlando HTTP/1.1
 // deploy
 ###
 GET https://cse341-arias.onrender.com HTTP/1.1
+
+###
+GET https://cse341-arias.onrender.com/claudia HTTP/1.1
+
+###
+GET https://cse341-arias.onrender.com/orlando HTTP/1.1
