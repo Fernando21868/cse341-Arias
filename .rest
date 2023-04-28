@@ -20,3 +20,9 @@ GET http://localhost:8080/contacts/64432829c6056f295d46e164 HTTP/1.1
 
 ###
 GET https://cse341-arias.onrender.com HTTP/1.1
+
+###
+GET https://cse341-arias.onrender.com/claudia HTTP/1.1
+
+###
+GET https://cse341-arias.onrender.com/orlando HTTP/1.1
