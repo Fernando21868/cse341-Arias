@@ -1,0 +1,26 @@
+[
+  {
+    "_id": { "$oid": "64432829c6056f295d46e164" },
+    "firstName": "Claudia Cecilia",
+    "lastName": "Flores",
+    "email": "claudiaFlores@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "April 10"
+  },
+  {
+    "_id": { "$oid": "644328efc6056f295d46e165" },
+    "firstName": "Orlando Ruben",
+    "lastName": "Arias",
+    "email": "orlandoArias@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "April 25"
+  },
+  {
+    "_id": { "$oid": "64432962c6056f295d46e167" },
+    "firstName": "Claudio Facundo",
+    "lastName": "Arias",
+    "email": "claudioArias@gmail.com",
+    "favoriteColor": "Pink",
+    "birthday": "April 15"
+  }
+]
