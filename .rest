@@ -47,3 +47,34 @@ GET https://cse341-arias.onrender.com/contacts/644328efc6056f295d46e165 HTTP/1.1
 
 ###
 GET https://cse341-arias.onrender.com/contacts/64432829c6056f295d46e164 HTTP/1.1
+
+// W03
+// Localhost
+
+###
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Fernando Rene",
+    "lastName": "Arias",
+    "email": "fernandoArias@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "30/06/1996"
+}
+
+###
+PUT http://localhost:8080/contacts/644efe0ebbd29a86e63510ee HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "M Fernando Rene",
+    "lastName": "M Arias",
+    "email": "M fernandoArias@gmail.com",
+    "favoriteColor": "M black",
+    "birthday": "M 30/06/1996"
+}
+
+
+###
+DELETE  http://localhost:8080/contacts/644efe0ebbd29a86e63510ee HTTP/1.1
