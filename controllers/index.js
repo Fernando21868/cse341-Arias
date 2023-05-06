@@ -1,6 +1,5 @@
 const { ObjectId } = require("mongodb");
 const mongodb = require("../db/connect");
-const { response } = require("express");
 
 const fernandoRoute = (req, res, next) => {
   res.send("Fernando Arias");
@@ -34,7 +33,7 @@ const singleContactRoute = async (req, res, next) => {
 };
 
 const createContactsRoute = async (req, res, next) => {
-  const newContact = await mongodb
+  await mongodb
     .getDb()
     .db()
     .collection("contacts")
@@ -48,7 +47,7 @@ const createContactsRoute = async (req, res, next) => {
 };
 
 const updateContactsRoute = async (req, res, next) => {
-  const contactUpdated = await mongodb
+  await mongodb
     .getDb()
     .db()
     .collection("contacts")
@@ -66,7 +65,7 @@ const updateContactsRoute = async (req, res, next) => {
 };
 
 const deleteContactsRoute = async (req, res, next) => {
-  const contactUpdated = await mongodb
+  await mongodb
     .getDb()
     .db()
     .collection("contacts")
@@ -87,5 +86,5 @@ module.exports = {
   singleContactRoute,
   createContactsRoute,
   updateContactsRoute,
-  deleteContactsRoute,
+  deleteContactsRoute
 };

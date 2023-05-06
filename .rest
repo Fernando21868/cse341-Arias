@@ -1,13 +1,13 @@
 // Week 01
 // Localhost
 
-GET http://localhost:4000 HTTP/1.1
+GET http://localhost:8080 HTTP/1.1
 
 ###
-GET http://localhost:4000/claudia HTTP/1.1
+GET http://localhost:8080/claudia HTTP/1.1
 
 ###
-GET http://localhost:4000/orlando HTTP/1.1
+GET http://localhost:8080/orlando HTTP/1.1
 
 // Render
 ###
@@ -56,15 +56,15 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Fernando Rene",
+    "firstName": "Luciana Elena",
     "lastName": "Arias",
-    "email": "fernandoArias@gmail.com",
-    "favoriteColor": "black",
-    "birthday": "30/06/1996"
+    "email": "lucianaArias@gmail.com",
+    "favoriteColor": "pink",
+    "birthday": "30/06/2000"
 }
 
 ###
-PUT http://localhost:8080/contacts/644efe0ebbd29a86e63510ee HTTP/1.1
+PUT http://localhost:8080/contacts/6456a9ec8ec75d23d92fdfad HTTP/1.1
 content-type: application/json
 
 {
@@ -77,4 +77,34 @@ content-type: application/json
 
 
 ###
-DELETE  http://localhost:8080/contacts/644efe0ebbd29a86e63510ee HTTP/1.1
+DELETE  http://localhost:8080/contacts/6456a9ec8ec75d23d92fdfad HTTP/1.1
+
+// Render
+
+###
+POST https://cse341-arias.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Luciana Elena",
+    "lastName": "Arias",
+    "email": "lucianaArias@gmail.com",
+    "favoriteColor": "pink",
+    "birthday": "30/06/2000"
+}
+
+###
+PUT https://cse341-arias.onrender.com/contacts/6456a9ec8ec75d23d92fdfad HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "M Fernando Rene",
+    "lastName": "M Arias",
+    "email": "M fernandoArias@gmail.com",
+    "favoriteColor": "M black",
+    "birthday": "M 30/06/1996"
+}
+
+
+###
+DELETE  https://cse341-arias.onrender.com/contacts/6456a9ec8ec75d23d92fdfad HTTP/1.1

@@ -1,12 +1,12 @@
-const express = require('express');
-const mongodb = require('./db/connect');
-const bodyParser = require('body-parser');
+const express = require("express");
+const mongodb = require("./db/connect");
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(bodyParser.json())
-app.use('/', require('./routes'));
+app.use(bodyParser.json());
+app.use("/", require("./routes"));
 
 mongodb.initDb((err, mongodb) => {
   if (err) {

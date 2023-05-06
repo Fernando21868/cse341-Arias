@@ -7,7 +7,7 @@ const {
   singleContactRoute,
   createContactsRoute,
   updateContactsRoute,
-  deleteContactsRoute,
+  deleteContactsRoute
 } = require("../controllers");
 
 routes.get("/", fernandoRoute);
