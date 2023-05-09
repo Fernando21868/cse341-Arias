@@ -1,25 +1,3 @@
-// Week 01
-// Localhost
-
-GET http://localhost:8080 HTTP/1.1
-
-###
-GET http://localhost:8080/claudia HTTP/1.1
-
-###
-GET http://localhost:8080/orlando HTTP/1.1
-
-// Render
-###
-GET https://cse341-arias.onrender.com/claudia HTTP/1.1
-
-###
-GET https://cse341-arias.onrender.com/orlando HTTP/1.1
-
-###
-GET https://cse341-arias.onrender.com HTTP/1.1
-
-// Week 02
 // Localhost
 
 ###
